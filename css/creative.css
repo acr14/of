@@ -706,3 +706,54 @@ body {
   padding-top: 0px;
   padding-bottom: 25px;
 }
+
+@media (min-width: 1200px) {
+  .android-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .itunes-button {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+}
+
+.careers-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .careers-container {
+    width: 625px;
+  }
+}
+@media (min-width: 992px) {
+  .careers-container {
+    width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  .careers-container {
+    width: 900px;
+  }
+}
+
+.dark-square {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #009B4A;
+}
+
+.light-square {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #6FCF3F;
+}
+
+
