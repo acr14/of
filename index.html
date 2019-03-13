@@ -42,7 +42,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onscroll="changeLogo()" onload="changeLogo()">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -52,7 +52,7 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top"><!-- OFFERFAST -->
-                  <img src="./img/logo 100x25.png">
+                  <img id="logo" src="./img/logo 100x25.png">
                 </a>
             </div>
 
@@ -743,6 +743,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+
+    <script src="js/logo-change.js"></script>
 
 </body>
 
