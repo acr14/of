@@ -32,7 +32,6 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -45,7 +44,7 @@
 <body id="page-top" onscroll="changeLogo()" onload="changeLogo()">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -74,12 +73,38 @@
                     <li>
                         <a class="page-scroll" href="careers.html">Careers</a>
                     </li>
+                    <li>
+                      <a class="page-scroll" href="http://app.offerfast.com/signin">
+                        <button type="button" class="btn btn-warning">Log In</button>
+                      </a>
+                        <!-- <button class="background"></button> -->
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+
+    <!-- <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button> 
+          </div> 
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <header>
         <div class="header-content">
@@ -122,7 +147,7 @@
                     <h2>Post Quickly</h2>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Snap a few pics and blast your deal to our network of match buyers or your privately VIP buyers.</p>
+                    <p class="text-muted">Snap a few pics and blast your deal to our network of match buyers or your private VIP buyers.</p>
                   </div>
                 </div>
               </li>
@@ -217,11 +242,11 @@
                                 <li><span></span>View Homes</li>
                                 <li><span></span>Messaging</li>
                                 <li><span></span>Make Offer</li>
-                                <li><span>10</span> Listing/Month</li>
                                 <li><span></span>Push Notifications</li>
                                 <li><span></span>Share Properties</li>
                                 <li><span></span>Saved Properties</li>
-                                <li><span>1</span> Saved Searches</li>
+                                <li><span>1</span> Buy Box</li>
+                                <li><span>$35</span> Per Property Listing</li>
                             </ul>
                         </div>
                         <!--//FEATURE LIST END-->
@@ -272,11 +297,11 @@
                                 <li><span></span>View Homes</li>
                                 <li><span></span>Messaging</li>
                                 <li><span></span>Make Offer</li>
-                                <li><span>Unlimited</span> Listings/Month</li>
                                 <li><span></span>Push Notifications</li>
                                 <li><span></span>Share Properties</li>
                                 <li><span></span>Saved Properties</li>
-                                <li><span>5</span> Saved Searches</li>
+                                <li><span>5</span> Buy Boxes</li>
+                                <li><span>5</span> Listings/Month</li>
                                 <li><span></span>Private Listing</li>
                             </ul>
                         </div>
@@ -332,11 +357,11 @@
                                 <li><span></span>View Homes</li>
                                 <li><span></span>Messaging</li>
                                 <li><span></span>Make Offer</li>
-                                <li><span>Unlimited</span> Listings/Month</li>
                                 <li><span></span>Push Notifications</li>
                                 <li><span></span>Share Properties</li>
                                 <li><span></span>Saved Properties</li>
-                                <li><span>Unlimited</span> Saved Searches</li>
+                                <li><span>Unlimited</span> Buy Boxes</li>
+                                <li><span>Unlimited</span> Listings/Month</li>
                                 <li><span></span>Private Listing</li>
                             </ul>
                         </div>
@@ -432,7 +457,7 @@
     </section>
 
     <section id="markets" class="bg-dark">
-        <div class="contatiner">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Markets</h2>
@@ -462,7 +487,7 @@
             <h2>About</h2>
               <p>
                 At OfferFast, we are real estate professionals looking to <i>streamline</i> the business of <strong>wholesaling</strong> and <strong>fix'n'flip</strong>. 
-                Together we have over a decade of experience in the field. We know the struggles of finding buyers as a wholesaler, peronsally. We also know the difficulties of building a flow of profitable deals as a rehabber. 
+                Together we have over a decade of experience in the field. We know the struggles of finding buyers as a wholesaler, personally. We also know the difficulties of building a flow of profitable deals as a rehabber. 
                 With the OfferFast app, we believe we have found the solution to these struggles! Come find out today by downloading the app!
               </p>
               <p>
@@ -499,6 +524,28 @@
       </div>
     </footer>
 
+    <div class="offer hide">
+      <div class="offer-exit">
+        <button type="button" class="close" aria-label="Close" id="close">
+          <!-- <span aria-hidden="true">&times;</span> -->
+          <i class="fa fa-times" aria-hidden="true"></i>
+
+        </button>
+      </div>
+      <div class="offer-content">
+        <img src="./img/logo-green-400.png" alt="green-logo">
+        <h1>Sign Up for Exclusive Real Estate Investing Tips</h1>
+        <h3>Lean how we are increasing our deal flow and profits</h3>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Email" aria-label="Recipient's Email" >
+            <!-- <input type="submit" value="submit" /> -->
+            <button type="button" class="btn btn-warning newsletter-submit" id="newsletterSubmit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -524,6 +571,9 @@
 
       gtag('config', 'UA-138499704-1');
     </script>
+
+    <script src="https://stunninghomes.activehosted.com/f/embed.php?id=7"
+    type="text/javascript" charset="utf-8"></script>
 
 </body>
 
